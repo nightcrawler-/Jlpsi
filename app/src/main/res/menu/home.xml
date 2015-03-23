@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kiki.com.jlpsi.ui.HomeActivity">
+    <item
+        android:title="Change password"
+        android:id="@+id/change_password"
+        app:showAsAction="never"></item>
+    <item
+        android:title="Logout"
+        android:id="@+id/logout"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/action_help"
+        android:title="Help"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_action_info"></item>
+
+</menu>
