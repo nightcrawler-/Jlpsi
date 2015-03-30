@@ -10,7 +10,7 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import kiki.com.jlpsi.utils.Utils;
 
 /**
- * Created by Frederick on 2/6/2015.
+ * Created by Doreen on 2/6/2015.
  */
 public class App extends Application {
     private static Typeface robotoSlabRegular = null, robotoSlabLight = null, robotoThin = null;
