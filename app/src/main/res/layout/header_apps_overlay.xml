@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|bottom">
+
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:spb_colors="@array/gplus_colors"
+        app:spb_interpolator="spb_interpolator_acceleratedecelerate"
+        app:spb_mirror_mode="true"
+        app:spb_progressiveStart_activated="true"
+        app:spb_progressiveStart_speed="1.5"
+        app:spb_progressiveStop_speed="3.4"
+        app:spb_reversed="true"
+        app:spb_sections_count="2"
+        app:spb_speed="1.7"
+        app:spb_stroke_separator_length="2dp"
+        app:spb_stroke_width="4dp" />
+
+
+</LinearLayout>

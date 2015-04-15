@@ -105,6 +105,7 @@ public class Utils {
         editor.putString(DbHelper.C_NAME, user.getName());
         editor.putString(DbHelper.C_ID, user.getId());
         editor.putString(DbHelper.C_ASSIGNED_BY, user.getUsername());
+        editor.putString(DbHelper.C_PASSWORD, user.getPassword());
         editor.commit();
     }
 
@@ -113,6 +114,7 @@ public class Utils {
         user.setName(getPrefs(c).getString(DbHelper.C_NAME, null));
         user.setId(getPrefs(c).getString(DbHelper.C_ID, null));
         user.setUsername(getPrefs(c).getString(DbHelper.C_ASSIGNED_BY, null));
+        user.setPassword(getPrefs(c).getString(DbHelper.C_PASSWORD, null));
         return user;
     }
 

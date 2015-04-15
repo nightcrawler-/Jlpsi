@@ -84,6 +84,11 @@ public class HomeActivity extends ActionBarActivity
                         .replace(R.id.container, ComplaintsFragment.newInstance(4))
                         .commit();
                 break;
+            case 4:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, SoftwareFragment.newInstance(5))
+                        .commit();
+                break;
             default:
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, HomeFragment.newInstance(position + 1))
@@ -109,6 +114,10 @@ public class HomeActivity extends ActionBarActivity
             case 4:
                 mTitle = getString(R.string.title_section4);
                 break;
+            case 5:
+                mTitle = "Software";
+                break;
+
         }
     }
 
@@ -155,7 +164,6 @@ public class HomeActivity extends ActionBarActivity
 
         return super.onOptionsItemSelected(item);
     }
-
 
 
     public static class HomeFragment extends Fragment {
@@ -255,7 +263,7 @@ public class HomeActivity extends ActionBarActivity
 
             @Override
             public int getCount() {
-                return 22;
+                return 0;
             }
 
             @Override

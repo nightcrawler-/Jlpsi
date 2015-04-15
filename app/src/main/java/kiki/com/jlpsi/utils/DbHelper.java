@@ -27,8 +27,9 @@ public class DbHelper extends SQLiteOpenHelper {
     public static final String C_RESPONSE = "response";
     public static final String C_RESPONDED_BY = "responded_by";
     public static final String C_LOGGED_BY = "logged_by";
+    public static final String C_PASSWORD = "password";
 
-    public static final String C_ID= "id";
+    public static final String C_ID = "id";
 
 
     public static final String C_CONDITION = "condition";
@@ -41,15 +42,13 @@ public class DbHelper extends SQLiteOpenHelper {
 
     private static final String CREATE_TABLE_COMPUTERS = "create table "
             + TABLE_COMPUTERS + "(" + C_COMP_SERIAL + " text primary key, "
-            + C_CONDITION + " text, " + C_PACKAGE_CODE+ " text, " + C_DESCRIPTION
-            + " text, " + C_ASSIGNED_TO+ " text)";
+            + C_CONDITION + " text, " + C_PACKAGE_CODE + " text, " + C_DESCRIPTION
+            + " text, " + C_ASSIGNED_TO + " text)";
 
     private static final String CREATE_TABLE_COMPLAINTS = "create table "
             + TABLE_COMPLAINTS + "(" + C_ID + " text primary key, " + C_DESCRIPTION
-            + " text, " + C_TIME+ " text," + C_RESPONSE + " text, "
+            + " text, " + C_TIME + " text," + C_RESPONSE + " text, "
             + C_RESPONDED_BY + " text, " + C_LOGGED_BY + " text)";
-
-
 
 
     private static DbHelper dbHelper = null;
